@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 // import { Aforo } from "./aforo/Aforo";
+import Album from './Album/Album'
 
 function App() {
   return (
@@ -25,14 +26,16 @@ function App() {
         boolean={true}
         isActivate/> */}
 
-        <Aforo 
+        {/* <Aforo 
         
         actual={38}
         disponible={12}
         estado={true}
         alphaTiempo='12 min apox'
 
-        />
+        /> */}
+
+        <Album />
 
         {/* <a
           className="App-link"
