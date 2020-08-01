@@ -57,12 +57,13 @@ export default function Album() {
       <main>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
+            
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Sistema de Aforo
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Pase adelante
-              El aforo en nuestro establecimiento esta disponible.
+              <b>Pase adelante </b>
+              el aforo en nuestro establecimiento esta disponible.
             </Typography>
           </Container>
         </div>
