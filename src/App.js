@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 // import { Aforo } from "./aforo/Aforo";
@@ -55,64 +55,64 @@ function App() {
 // return <h1>Bienvenidos a React App, { props.title }</h1>
 // }
 
-class Hello extends Component
-{
-  render () 
-  {
-    return <h1>Bienvenidos a React App, { this.props.title }</h1>
-  }
-}
+// class Hello extends Component
+// {
+//   render () 
+//   {
+//     return <h1>Bienvenidos a React App, { this.props.title }</h1>
+//   }
+// }
 
-class Text extends Component {
-  render () {
-    const textoSegundoBool = this.props.isActivate ? 'On' : 'Off';
-    const mappedNumbers = this.props.arrayOfNumbers.map( n=> n*2 );
+// class Text extends Component {
+//   render () {
+//     const textoSegundoBool = this.props.isActivate ? 'On' : 'Off';
+//     const mappedNumbers = this.props.arrayOfNumbers.map( n=> n*2 );
 
-    return (
-      <div>
-        <p> { this.props.text } </p> 
-        <p> { this.props.number } </p>
-        <p> { JSON.stringify(this.props.boolean) } </p>
-        <p> { this.props.isActivate } </p>
-        <p> { textoSegundoBool } </p>
-        <p> { this.props.arrayOfNumbers.join(', ') } </p>
-        <p> { mappedNumbers.join(', ') } </p>
-        <p> { this.props.objectWithInfo.key } </p>
-      </div>
-    )
-  }
+//     return (
+//       <div>
+//         <p> { this.props.text } </p> 
+//         <p> { this.props.number } </p>
+//         <p> { JSON.stringify(this.props.boolean) } </p>
+//         <p> { this.props.isActivate } </p>
+//         <p> { textoSegundoBool } </p>
+//         <p> { this.props.arrayOfNumbers.join(', ') } </p>
+//         <p> { mappedNumbers.join(', ') } </p>
+//         <p> { this.props.objectWithInfo.key } </p>
+//       </div>
+//     )
+//   }
   
-}
+// }
 
-class Aforo extends Component {
+// class Aforo extends Component {
 
-  // this.state = {
+//   // this.state = {
 
-  // }
+//   // }
 
 
-  render() {
+//   render() {
 
-    const {
-      estado,
-      actual,
-      disponible,
-      alphaTiempo,      
-    } = this.props;
+//     const {
+//       estado,
+//       actual,
+//       disponible,
+//       alphaTiempo,      
+//     } = this.props;
 
-    const estadoCli = estado ? 'Siga' : 'Espere'
+//     const estadoCli = estado ? 'Siga' : 'Espere'
 
-     return (
-      <div>
-          <h2> { actual } </h2>
-          <h2> { disponible } </h2>
-          <h2> { alphaTiempo } </h2>
-          <h2> { estadoCli } </h2>
-      </div>
+//      return (
+//       <div>
+//           <h2> { actual } </h2>
+//           <h2> { disponible } </h2>
+//           <h2> { alphaTiempo } </h2>
+//           <h2> { estadoCli } </h2>
+//       </div>
 
-     )
-  }
-}
+//      )
+//   }
+// }
 
 
 export default App;

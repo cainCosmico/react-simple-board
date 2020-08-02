@@ -74,6 +74,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Instalaciones necesarias 
 
 - npm install @material-ui/core
-- npm install @materia-ui/icons
 - npm install @material-ui/icons
 
