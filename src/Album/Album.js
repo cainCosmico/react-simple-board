@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import AppBar from '@material-ui/core/AppBar';
 // import Button from '@material-ui/core/Button';
 // import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 // import Link from '@material-ui/core/Link';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles( ( theme ) => ( {
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -46,10 +46,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3 ];//, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   const classes = useStyles();
+
+  const randomCurrentCount = 0;
+  const randomAvalible = 0;
+  const randomTimeWait = 0;
+  const min=0;
+  const max=100;
+
+  const [ counter,setCounter ]   = useState( randomCurrentCount );
+  const [ avalible,setAvalible ] = useState( randomAvalible );
+  const [ wait,setWait ]         = useState( randomTimeWait );
+
+  const timer = () => {
+    let aux = min + Math.random() * (max - min);
+    aux = parseInt(aux);
+    console.log('CAlling timer: ',aux);
+
+    setCounter( aux );
+    setAvalible( avalible+1 );
+    setWait( wait+1 );
+  }
+  
+  const handleRandom = () => {
+    timer();
+  }
+
+  
+
 
   return (
     <React.Fragment>
@@ -85,7 +111,7 @@ export default function Album() {
                       Conteo actual
                     </Typography>
                     <Typography>
-                      24
+                      { counter }
                     </Typography>
                   </CardContent>
                 </Card>
@@ -103,7 +129,7 @@ export default function Album() {
                       Disponible
                     </Typography>
                     <Typography>
-                      15
+                      { avalible }
                     </Typography>
                   </CardContent>
                 </Card>
@@ -121,11 +147,13 @@ export default function Album() {
                       Tiempo aprox espera
                     </Typography>
                     <Typography component="h1">
-                      5:30 min
+                      {  wait }
                     </Typography>
                   </CardContent>
                 </Card>
               </Grid>
+
+              <button onClick={ handleRandom }>Click me plisssss</button>
 
             {/* ))} */}
           </Grid>

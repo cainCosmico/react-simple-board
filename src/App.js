@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
@@ -35,7 +35,7 @@ function App() {
 
         /> */}
 
-        <Album />
+        <Album value={10}/>
 
         {/* <a
           className="App-link"
